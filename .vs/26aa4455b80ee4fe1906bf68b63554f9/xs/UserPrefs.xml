@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{B64E572C-9481-90F1-7012-5EEDB7353178}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FPS/Scripts/EnemyController.cs">
+    <Files>
+      <File FileName="Assets/FPS/Scripts/PlayerCharacterController.cs" Line="131" Column="62" IsPinned="True" />
+      <File FileName="Assets/FPS/Scripts/PlayerInputHandler.cs" Line="98" Column="23" />
+      <File FileName="Assets/FPS/Scripts/GameConstants.cs" Line="24" Column="1" />
+      <File FileName="Assets/FPS/Scripts/PlayerWeaponsManager.cs" Line="113" Column="45" />
+      <File FileName="Assets/FPS/Scripts/WeaponController.cs" Line="200" Column="28" />
+      <File FileName="Assets/FPS/Scripts/EnemyController.cs" Line="385" Column="43" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="26aa4455b80ee4fe1906bf68b63554f9" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="FPS" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="UI" expanded="True" />
+                  <Node name="EnemyController.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Standard Assets" expanded="True">
+                <Node name="CrossPlatformInput" expanded="True">
+                  <Node name="Scripts" expanded="True">
+                    <Node name="PlatformSpecific" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="245b1660-4ee2-4ced-8ffd-c3298ee10b83" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
