@@ -25,8 +25,10 @@ public class PlayerInputHandler : MonoBehaviour
         m_GameFlowManager = FindObjectOfType<GameFlowManager>();
         DebugUtility.HandleErrorIfNullFindObject<GameFlowManager, PlayerInputHandler>(m_GameFlowManager, this);
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private void LateUpdate()
@@ -36,7 +38,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public bool CanProcessInput()
     {
-        return Cursor.lockState == CursorLockMode.Locked && !m_GameFlowManager.gameIsEnding;
+        return true;//Cursor.lockState == CursorLockMode.Locked && !m_GameFlowManager.gameIsEnding;
     }
 
     public Vector3 GetMoveInput()
@@ -47,7 +49,7 @@ public class PlayerInputHandler : MonoBehaviour
             float zPos = CrossPlatformInputManager.GetAxis(GameConstants.k_AxisNameVertical);
             //Vector3 move = new Vector3(Input.GetAxisRaw(GameConstants.k_AxisNameHorizontal), 0f, Input.GetAxisRaw(GameConstants.k_AxisNameVertical));
             Vector3 move = new Vector3(xPos, 0f, zPos);
-            Debug.Log("Pos - x: " + xPos + " , z: " + zPos);
+            //Debug.Log("Pos - x: " + xPos + " , z: " + zPos);
             // constrain move input to a maximum magnitude of 1, otherwise diagonal movement might exceed the max move speed defined
             move = Vector3.ClampMagnitude(move, 1);
 
@@ -101,14 +103,14 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) != 0f;
+            bool isGamepad = CrossPlatformInputManager.GetAxis(GameConstants.k_ButtonNameGamepadFire) != 0f;
             if (isGamepad)
             {
-                return Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) >= triggerAxisThreshold;
+                return CrossPlatformInputManager.GetAxis(GameConstants.k_ButtonNameGamepadFire) >= triggerAxisThreshold;
             }
             else
             {
-                return Input.GetButton(GameConstants.k_ButtonNameFire);
+                return CrossPlatformInputManager.GetButton(GameConstants.k_ButtonNameFire);
             }
         }
 
@@ -119,8 +121,8 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadAim) != 0f;
-            bool i = isGamepad ? (Input.GetAxis(GameConstants.k_ButtonNameGamepadAim) > 0f) : Input.GetButton(GameConstants.k_ButtonNameAim);
+            bool isGamepad = CrossPlatformInputManager.GetAxis(GameConstants.k_ButtonNameGamepadAim) != 0f;
+            bool i = isGamepad ? (CrossPlatformInputManager.GetAxis(GameConstants.k_ButtonNameGamepadAim) > 0f) : CrossPlatformInputManager.GetButton(GameConstants.k_ButtonNameAim);
             return i;
         }
 
@@ -162,17 +164,17 @@ public class PlayerInputHandler : MonoBehaviour
         if (CanProcessInput())
         {
 
-            bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadSwitchWeapon) != 0f;
-            string axisName = isGamepad ? GameConstants.k_ButtonNameGamepadSwitchWeapon : GameConstants.k_ButtonNameSwitchWeapon;
+            //bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadSwitchWeapon) != 0f;
+            //string axisName = isGamepad ? GameConstants.k_ButtonNameGamepadSwitchWeapon : GameConstants.k_ButtonNameSwitchWeapon;
 
-            if (Input.GetAxis(axisName) > 0f)
-                return -1;
-            else if (Input.GetAxis(axisName) < 0f)
-                return 1;
-            else if (Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) > 0f)
-                return -1;
-            else if (Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) < 0f)
-                return 1;
+            //if (Input.GetAxis(axisName) > 0f)
+            //    return -1;
+            //else if (Input.GetAxis(axisName) < 0f)
+            //    return 1;
+            //else if (Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) > 0f)
+            //    return -1;
+            //else if (Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) < 0f)
+            //    return 1;
         }
 
         return 0;
@@ -206,8 +208,8 @@ public class PlayerInputHandler : MonoBehaviour
         if (CanProcessInput())
         {
             // Check if this look input is coming from the mouse
-            bool isGamepad = Input.GetAxis(stickInputName) != 0f;
-            float i = isGamepad ? Input.GetAxis(stickInputName) : Input.GetAxisRaw(mouseInputName);
+            bool isGamepad = CrossPlatformInputManager.GetAxis(stickInputName) != 0f;
+            float i = isGamepad ? CrossPlatformInputManager.GetAxis(stickInputName) : CrossPlatformInputManager.GetAxisRaw(mouseInputName);
 
             // handle inverting vertical input
             if (invertYAxis)

@@ -55,8 +55,10 @@ public class InGameMenuManager : MonoBehaviour
         // Lock cursor when clicking outside of menu
         if (!menuRoot.activeSelf && Input.GetMouseButtonDown(0))
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         if(Input.GetKeyDown(KeyCode.Escape))
         {
@@ -107,8 +109,8 @@ public class InGameMenuManager : MonoBehaviour
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
             Time.timeScale = 1f;
             AudioUtility.SetMasterVolume(1);
         }
