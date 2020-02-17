@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B64E572C-9481-90F1-7012-5EEDB7353178}</ProjectGuid>
+    <ProjectGuid>{8D2F5DDE-6A20-5C25-9622-F24413AE89CA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -165,62 +165,62 @@
     <None Include="Assets\FPS\Art\Fonts\ApacheLicense2.0.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ProGrids">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.UIWidgets.Editor">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.UIWidgets.Editor.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.UIWidgets.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Connect.Share.Editor">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.Connect.Share.Editor.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.Connect.Share.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.UIWidgets">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.UIWidgets.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.UIWidgets.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core.Scripts">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.InteractiveTutorialsFramework">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.024">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -421,16 +421,16 @@
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.16f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.FileSystem">
-      <HintPath>/private/var/folders/_t/t50llmnn1n1028p4tn67f3380000gn/T/26aa4455b80ee4fe1906bf68b63554f9/Library/PackageCache/com.unity.connect.share@1.0.9-preview/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
+      <HintPath>/Users/vidya/Unity/Defenders/Library/PackageCache/com.unity.connect.share@1.0.9-preview/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.16f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -780,15 +780,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{F0E57FE5-FD90-7AD7-DE5C-B5AE9144E332}</Project>
+      <Project>{39194AB3-3AB4-B097-2450-21EC0D36AEE5}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{97E51D7A-4FF3-C859-B116-EAD9948F9072}</Project>
+      <Project>{D76FDF02-3368-09B5-6D46-F1829882F4E5}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{D05E93BC-5FA7-AA42-6B5E-67B02E076DFB}</Project>
+      <Project>{A8FAD4E6-ABB2-B007-3409-BFF1366BB57E}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>

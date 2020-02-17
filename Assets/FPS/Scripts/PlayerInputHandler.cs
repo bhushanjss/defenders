@@ -25,8 +25,8 @@ public class PlayerInputHandler : MonoBehaviour
         m_GameFlowManager = FindObjectOfType<GameFlowManager>();
         DebugUtility.HandleErrorIfNullFindObject<GameFlowManager, PlayerInputHandler>(m_GameFlowManager, this);
 
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void LateUpdate()
@@ -43,9 +43,11 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
+            float xPos = CrossPlatformInputManager.GetAxis(GameConstants.k_AxisNameHorizontal);
+            float zPos = CrossPlatformInputManager.GetAxis(GameConstants.k_AxisNameVertical);
             //Vector3 move = new Vector3(Input.GetAxisRaw(GameConstants.k_AxisNameHorizontal), 0f, Input.GetAxisRaw(GameConstants.k_AxisNameVertical));
-            Vector3 move = new Vector3(CrossPlatformInputManager.GetAxisRaw(GameConstants.k_AxisNameHorizontal), 0f, CrossPlatformInputManager.GetAxisRaw(GameConstants.k_AxisNameVertical));
-
+            Vector3 move = new Vector3(xPos, 0f, zPos);
+            Debug.Log("Pos - x: " + xPos + " , z: " + zPos);
             // constrain move input to a maximum magnitude of 1, otherwise diagonal movement might exceed the max move speed defined
             move = Vector3.ClampMagnitude(move, 1);
 
