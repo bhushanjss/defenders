@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3659995153115176983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 10}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 8402172112652589804}
   m_Father: {fileID: 0}
@@ -60,7 +60,7 @@ MonoBehaviour:
   radius: 0.1
   root: {fileID: 3659995153115176982}
   tip: {fileID: 1135791333161367127}
-  maxLifeTime: 5
+  maxLifeTime: 15
   impactVFX: {fileID: 7655095426451682942, guid: a7d68b1a502e02a49b8efb1b86a8c931,
     type: 3}
   impactVFXLifetime: 5
@@ -69,8 +69,8 @@ MonoBehaviour:
   hittableLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  speed: 300
-  gravityDownAcceleration: 0
+  speed: 50
+  gravityDownAcceleration: 9.8
   trajectoryCorrectionDistance: 5
   inheritWeaponVelocity: 0
   damage: 15
