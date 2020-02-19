@@ -43,9 +43,9 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            float xPos = Input.GetAxis(GameConstants.k_AxisNameHorizontal);
-            float zPos = Input.GetAxis(GameConstants.k_AxisNameVertical);
-            //Vector3 move = new Vector3(Input.GetAxisRaw(GameConstants.k_AxisNameHorizontal), 0f, Input.GetAxisRaw(GameConstants.k_AxisNameVertical));
+            float xPos = ControlFreak2.CF2Input.GetAxis(GameConstants.k_AxisNameHorizontal);
+            float zPos = ControlFreak2.CF2Input.GetAxis(GameConstants.k_AxisNameVertical);
+            //Vector3 move = new Vector3(ControlFreak2.CF2Input.GetAxisRaw(GameConstants.k_AxisNameHorizontal), 0f, ControlFreak2.CF2Input.GetAxisRaw(GameConstants.k_AxisNameVertical));
             Vector3 move = new Vector3(xPos, 0f, zPos);
             //Debug.Log("Pos - x: " + xPos + " , z: " + zPos);
             // constrain move input to a maximum magnitude of 1, otherwise diagonal movement might exceed the max move speed defined
@@ -71,7 +71,7 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            return Input.GetButtonDown(GameConstants.k_ButtonNameJump);
+            return ControlFreak2.CF2Input.GetButtonDown(GameConstants.k_ButtonNameJump);
         }
 
         return false;
@@ -81,7 +81,7 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            return Input.GetButton(GameConstants.k_ButtonNameJump);
+            return ControlFreak2.CF2Input.GetButton(GameConstants.k_ButtonNameJump);
         }
 
         return false;
@@ -101,14 +101,14 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) != 0f;
+            bool isGamepad = ControlFreak2.CF2Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) != 0f;
             if (isGamepad)
             {
-                return Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) >= triggerAxisThreshold;
+                return ControlFreak2.CF2Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) >= triggerAxisThreshold;
             }
             else
             {
-                return Input.GetButton(GameConstants.k_ButtonNameFire);
+                return ControlFreak2.CF2Input.GetButton(GameConstants.k_ButtonNameFire);
             }
         }
 
@@ -119,8 +119,8 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadAim) != 0f;
-            bool i = isGamepad ? (Input.GetAxis(GameConstants.k_ButtonNameGamepadAim) > 0f) : Input.GetButton(GameConstants.k_ButtonNameAim);
+            bool isGamepad = ControlFreak2.CF2Input.GetAxis(GameConstants.k_ButtonNameGamepadAim) != 0f;
+            bool i = isGamepad ? (ControlFreak2.CF2Input.GetAxis(GameConstants.k_ButtonNameGamepadAim) > 0f) : ControlFreak2.CF2Input.GetButton(GameConstants.k_ButtonNameAim);
             return i;
         }
 
@@ -131,7 +131,7 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            return Input.GetButton(GameConstants.k_ButtonNameSprint);
+            return ControlFreak2.CF2Input.GetButton(GameConstants.k_ButtonNameSprint);
         }
 
         return false;
@@ -141,7 +141,7 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            return Input.GetButtonDown(GameConstants.k_ButtonNameCrouch);
+            return ControlFreak2.CF2Input.GetButtonDown(GameConstants.k_ButtonNameCrouch);
         }
 
         return false;
@@ -151,7 +151,7 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            return Input.GetButtonUp(GameConstants.k_ButtonNameCrouch);
+            return ControlFreak2.CF2Input.GetButtonUp(GameConstants.k_ButtonNameCrouch);
         }
 
         return false;
@@ -162,16 +162,16 @@ public class PlayerInputHandler : MonoBehaviour
         if (CanProcessInput())
         {
 
-            bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadSwitchWeapon) != 0f;
+            bool isGamepad = ControlFreak2.CF2Input.GetAxis(GameConstants.k_ButtonNameGamepadSwitchWeapon) != 0f;
             string axisName = isGamepad ? GameConstants.k_ButtonNameGamepadSwitchWeapon : GameConstants.k_ButtonNameSwitchWeapon;
 
-            if (Input.GetAxis(axisName) > 0f)
+            if (ControlFreak2.CF2Input.GetAxis(axisName) > 0f)
                 return -1;
-            else if (Input.GetAxis(axisName) < 0f)
+            else if (ControlFreak2.CF2Input.GetAxis(axisName) < 0f)
                 return 1;
-            else if (Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) > 0f)
+            else if (ControlFreak2.CF2Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) > 0f)
                 return -1;
-            else if (Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) < 0f)
+            else if (ControlFreak2.CF2Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) < 0f)
                 return 1;
         }
 
@@ -182,17 +182,17 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (ControlFreak2.CF2Input.GetKeyDown(KeyCode.Alpha1))
                 return 1;
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            else if (ControlFreak2.CF2Input.GetKeyDown(KeyCode.Alpha2))
                 return 2;
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            else if (ControlFreak2.CF2Input.GetKeyDown(KeyCode.Alpha3))
                 return 3;
-            else if (Input.GetKeyDown(KeyCode.Alpha4))
+            else if (ControlFreak2.CF2Input.GetKeyDown(KeyCode.Alpha4))
                 return 4;
-            else if (Input.GetKeyDown(KeyCode.Alpha5))
+            else if (ControlFreak2.CF2Input.GetKeyDown(KeyCode.Alpha5))
                 return 5;
-            else if (Input.GetKeyDown(KeyCode.Alpha6))
+            else if (ControlFreak2.CF2Input.GetKeyDown(KeyCode.Alpha6))
                 return 6;
             else
                 return 0;
@@ -206,8 +206,8 @@ public class PlayerInputHandler : MonoBehaviour
         if (CanProcessInput())
         {
             // Check if this look input is coming from the mouse
-            bool isGamepad = Input.GetAxis(stickInputName) != 0f;
-            float i = isGamepad ? Input.GetAxis(stickInputName) : Input.GetAxisRaw(mouseInputName);
+            bool isGamepad = ControlFreak2.CF2Input.GetAxis(stickInputName) != 0f;
+            float i = isGamepad ? ControlFreak2.CF2Input.GetAxis(stickInputName) : ControlFreak2.CF2Input.GetAxisRaw(mouseInputName);
 
             // handle inverting vertical input
             if (invertYAxis)
