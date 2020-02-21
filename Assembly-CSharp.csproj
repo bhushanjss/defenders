@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\FPS\Scripts\Actor.cs" />
     <Compile Include="Assets\FPS\Scripts\ActorsManager.cs" />
+    <Compile Include="Assets\FPS\Scripts\AsteroidController.cs" />
     <Compile Include="Assets\FPS\Scripts\AudioManager.cs" />
     <Compile Include="Assets\FPS\Scripts\AudioUtility.cs" />
     <Compile Include="Assets\FPS\Scripts\ChargedProjectileEffectsHandler.cs" />
