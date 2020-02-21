@@ -29,4 +29,15 @@ public class AsteroidController : MonoBehaviour
         //transform.Translate(Vector3.down * _speed * Time.deltaTime);
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Hit: "+ other.tag);
+
+        if(other.tag == "Missile")
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
+    }
 }

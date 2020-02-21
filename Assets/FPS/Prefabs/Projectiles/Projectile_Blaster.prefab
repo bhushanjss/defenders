@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3659995153115176982}
   - component: {fileID: 528546716365072993}
   - component: {fileID: 8924682559891268397}
+  - component: {fileID: 136474133500949972}
   m_Layer: 0
   m_Name: Projectile_Blaster
-  m_TagString: Untagged
+  m_TagString: Missile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,6 +77,20 @@ MonoBehaviour:
   damage: 15
   areaOfDamage: {fileID: 0}
   radiusColor: {r: 0, g: 1, b: 1, a: 1}
+--- !u!136 &136474133500949972
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659995153115176983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5564024855854763701
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +134,7 @@ GameObject:
   - component: {fileID: 8402172112654882828}
   m_Layer: 0
   m_Name: Mesh_Projectile
-  m_TagString: Untagged
+  m_TagString: Missile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
