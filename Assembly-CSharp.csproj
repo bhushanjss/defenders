@@ -66,6 +66,7 @@
     <Compile Include="Assets\FPS\Scripts\Actor.cs" />
     <Compile Include="Assets\FPS\Scripts\ActorsManager.cs" />
     <Compile Include="Assets\FPS\Scripts\AsteroidController.cs" />
+    <Compile Include="Assets\FPS\Scripts\AsteroidsManager.cs" />
     <Compile Include="Assets\FPS\Scripts\AudioManager.cs" />
     <Compile Include="Assets\FPS\Scripts\AudioUtility.cs" />
     <Compile Include="Assets\FPS\Scripts\ChargedProjectileEffectsHandler.cs" />
@@ -141,7 +142,9 @@
     <Compile Include="Assets\FPS\Scripts\WeaponController.cs" />
     <Compile Include="Assets\FPS\Scripts\WeaponFuelCellHandler.cs" />
     <Compile Include="Assets\FPS\Scripts\WeaponPickup.cs" />
+    <Compile Include="Assets\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
     <None Include="Assets\FPS\Art\Shaders\ProjectorMultiply.shader" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\shader info.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
@@ -159,11 +162,13 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\FPS\Art\Fonts\ApacheLicense2.0.txt" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.ProGrids">
