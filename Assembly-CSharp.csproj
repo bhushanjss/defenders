@@ -113,6 +113,7 @@
     <Compile Include="Assets\FPS\Scripts\ProjectileBase.cs" />
     <Compile Include="Assets\FPS\Scripts\ProjectileChargeParameters.cs" />
     <Compile Include="Assets\FPS\Scripts\ProjectileStandard.cs" />
+    <Compile Include="Assets\FPS\Scripts\ScoreDisplayManager.cs" />
     <Compile Include="Assets\FPS\Scripts\TakeScreenshot.cs" />
     <Compile Include="Assets\FPS\Scripts\TeleportPlayer.cs" />
     <Compile Include="Assets\FPS\Scripts\TemplateObject.cs" />

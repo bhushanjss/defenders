@@ -10,11 +10,17 @@ public class AsteroidController : MonoBehaviour
     private float _speed = 4.0f;
     [SerializeField]
     private float sizeRange = 10;
-    private int _hit = 0;
-    private int _miss = 0;
+    [SerializeField]
+    private AsteroidsManager asteroidsManager;
+    
 
     void Start()
     {
+        asteroidsManager = GameObject.Find("AsteroidsManager").GetComponent<AsteroidsManager>();
+        if(asteroidsManager == null)
+        {
+            Debug.LogError("The AsteroidsManager is null");
+        }
         float randomSize = Random.Range(1f, sizeRange);
         transform.localScale = new Vector3(randomSize, randomSize, randomSize);
     }
@@ -27,7 +33,7 @@ public class AsteroidController : MonoBehaviour
         if(transform.position.y < yThreshold)
         {
             Destroy(this.gameObject);
-            _miss++;
+            asteroidsManager.addMiss();
         }        
     }
 
@@ -37,7 +43,7 @@ public class AsteroidController : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(this.gameObject);
-            _hit++;
+            asteroidsManager.addHit();
         }
     }
 }
