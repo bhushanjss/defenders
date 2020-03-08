@@ -12,7 +12,8 @@ public class AsteroidController : MonoBehaviour
     private float sizeRange = 10;
     [SerializeField]
     private AsteroidsManager asteroidsManager;
-    
+    [SerializeField]
+    private GameObject explosionPrefab;
 
     void Start()
     {
@@ -39,11 +40,19 @@ public class AsteroidController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Missile")
+        var vfx = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        vfx.transform.localScale = transform.localScale;
+        Destroy(vfx, 5f);
+
+        if (other.tag == "Missile")
         {
             Destroy(other.gameObject);
             Destroy(this.gameObject);
             asteroidsManager.addHit();
+        } else if(other.tag == "Earth")
+        {
+            Destroy(this.gameObject);
+            asteroidsManager.addMiss();
         }
     }
 }

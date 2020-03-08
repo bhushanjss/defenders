@@ -59,7 +59,8 @@ public class AsteroidsManager : MonoBehaviour
             Vector3 pos = new Vector3(randomPosX, randomPosY, randomPosZ);
 
             int i = Random.Range(0, 10);
-            GameObject asteroid = Instantiate(asteroids[i]);
+            //GameObject asteroid = Instantiate(asteroids[i]);
+            GameObject asteroid = Instantiate(asteroid1B);
             //asteroid.transform.SetParent(asteroidContainer.transform);
             asteroid.transform.Translate(pos);
             yield return new WaitForSeconds(5.0f);
